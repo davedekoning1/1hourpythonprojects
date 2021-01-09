@@ -1,0 +1,36 @@
+Github netjes inrichten
+
+- Nette mapstructuur (Hoe richt je het in, mogelijk met oog op pakketje maken) https://packaging.python.org/tutorials/packaging-projects/
+- Uitzoeken hoe je netjes kunt testen
+- Uitzoeken hoe je netjes de coverage van je testen kunt bepalen
+- Zorgen dat het na te doen is (dus met env) (Zoek uit of je anaconda in docker kan doen)
+- Iets met Docker
+- Documentatie structuur/handleiding
+
+Mapstructuur
+- Naam project
+  \ - src (bevat de code)
+    - external (bevat externe code/producten)
+    - installation
+      - docker file (Hoe maak je de docker container/richt je die in)
+      - environment file (van anaconda, of mogelijk gewoon standaard python, met pip requirements)
+      - README (beschrijft installatie)
+    - testen
+      - coverage html
+      - test html?
+      - test resultaten/rapport
+    - LICENSE file
+    - Setup.py
+    
+  
+Stappenplan
+1. Doorloop stappenplan voor pakketje (https://test.pypi.org/project/example-pkg-davedekoning1/0.0.1/)
+2. Maak een onzin pakket/script met test e.d.
+3. Maak hier een pakket van
+4. Documenteer
+5. Environment file enzo
+6. coverage maken
+7. Zorgen voor batch files om alles te draaien (mogelijk automatisch genereren van de batch files)
+8. Zoek zo'n license file op.
+9. Maak een placeholder voor een docker file.
+
