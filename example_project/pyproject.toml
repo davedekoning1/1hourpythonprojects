@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "my_project"
 authors = [
-    { name = "Dave de Koning", email = "davedekoning1@gmail.com" },,
+    { name = "Dave de Koning", email = "davedekoning1@gmail.com" },
 ]
 dependencies = [
 ]
