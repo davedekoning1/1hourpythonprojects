@@ -1,0 +1,14 @@
+name: viz
+dependencies:
+  - python=3.7
+  - pip
+  - netCDF4
+  - bokeh
+  - pandas
+  - jupyter
+  - matplotlib
+  - Basemap
+  - proj4
+  - requests
+  - sphinx
+  - coverage

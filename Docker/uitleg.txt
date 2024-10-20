@@ -1,0 +1,33 @@
+Docker met python erin
+
+- Zorgen dat je een container op kunt starten
+- Python installeren (middels anaconda)
+- Git installeren
+- Zorgen dat je een conda environment kan installeren
+  Hoe lever je het bestand aan? Of komt dat uit github?
+- Zorgen dat je een pakketje kunt downloaden
+- Zorgen dat je een check out kan maken van github
+  Hierbij netjes omgaan met wachtwoorden
+- Draai een script (automatisch)
+- In de container kunnen en het script handmatig draaien
+- Documentatie
+
+Voor de docker installatie moest ik de volgende stappen doorlopen:
+https://docs.docker.com/docker-for-windows/install/
+
+En vervolgens:
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+Dat werkte
+
+Om een docker image te bouwen:
+docker build -t conda .
+
+waar er een Dockerfile om de map staat waarin je dit commando draait
+ (voor Dockerfile voorbeerld: https://medium.com/@chadlagore/conda-environments-with-docker-82cdc9d25754)
+ 
+Om het te draaien:
+docker run -it conda 
+
+Dit werkte de eerste keer, daarna kreeg ik foutmeldingen bij het bouwen.
+Niet heel duidelijk waarom.
