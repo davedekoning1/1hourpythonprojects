@@ -3,7 +3,7 @@ requires = ["flit_core >=3.4.0,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "my_project"
+name = "html_helper"
 authors = [
     { name = "Dave de Koning", email = "davedekoning1@gmail.com" },
 ]
@@ -44,8 +44,8 @@ examples = [
     "notebook",
 ]
 
-full = ["my_project[io,extra,dev,test,doc,examples]"]
-slim = ["my_project[io,extra,examples]"]
+full = ["html_helper[io,extra,dev,test,doc,examples]"]
+slim = ["html_helper[io,extra,examples]"]
 
 [project.urls]
 Documentation = ""
@@ -68,7 +68,7 @@ exclude = ["docs"]
 convention = "numpy"
 
 [tool.flit.sdist]
-include = ["my_project"]
+include = ["html_helper"]
 exclude = ["docs", "examples", "tests", ".github"]
 
 [tool.pytest.ini_options]
