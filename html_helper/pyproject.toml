@@ -1,0 +1,76 @@
+[build-system]
+requires = ["flit_core >=3.4.0,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "my_project"
+authors = [
+    { name = "Dave de Koning", email = "davedekoning1@gmail.com" },
+]
+dependencies = [
+]
+requires-python = ">=3.9"
+readme = "README.rst"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ['version', 'description']
+
+[project.optional-dependencies]
+io = [
+
+]
+extra = [
+
+]
+dev = [
+    "pip>=23.1.2",
+]
+test = [
+    "pytest>=2.7.3",
+    "pytest-cov",
+    "pytest-mock"
+]
+doc = [
+    "nbsphinx",
+    "sphinx",
+    "sphinx_design",
+    "pydata-sphinx-theme",
+    "sphinx_autosummary_accessors"
+]
+examples = [
+    "jupyterlab",
+    "notebook",
+]
+
+full = ["my_project[io,extra,dev,test,doc,examples]"]
+slim = ["my_project[io,extra,examples]"]
+
+[project.urls]
+Documentation = ""
+Source = ""
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.ruff]
+line-length = 88
+
+# enable pydocstyle (E), pyflake (F) and isort (I), pytest-style (PT)
+select = ["E", "F", "I", "PT", "D"]
+ignore-init-module-imports = true
+ignore = ["D211", "D213", "E741", "D105", "E712"]
+exclude = ["docs"]
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+[tool.flit.sdist]
+include = ["my_project"]
+exclude = ["docs", "examples", "tests", ".github"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+]
