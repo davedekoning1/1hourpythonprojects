@@ -69,7 +69,7 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
+docs/
 
 # PyBuilder
 target/
@@ -128,3 +128,13 @@ dmypy.json
 # Pyre type checker
 .pyre/
 Voorbeeldproject/.vscode/settings.json
+example_project/docs/doctrees/add_something.doctree
+example_project/docs/doctrees/environment.pickle
+example_project/docs/doctrees/index.doctree
+example_project/docs/html/.buildinfo
+example_project/docs/html/genindex.html
+example_project/docs/html/index.html
+example_project/docs/html/objects.inv
+example_project/docs/html/search.html
+example_project/docs/html/searchindex.js
+example_project/docs/html/_sources/index.rst.txt
